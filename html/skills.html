@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsujin</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/skills.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">TSUJIN.</a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="skills.html" class="nav__link active-link">Skills</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="contact.html" class="button button--ghost button--small">Hire Me</a>
+          </li>
+        </ul>
+        
+        <!-- Close button (mobile) -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      
+      <div class="nav__btns">
+        <a href="contact.html" class="button button--ghost button--small nav__mobile-btn">Hire Me</a>
+        
+        <!-- Toggle button (mobile) -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Skills Section -->
+    <section class="skills section" id="skills">
+      <h2 class="section__title">Skills</h2>
+      <span class="section__subtitle">My Technical Level</span>
+
+      <div class="skills__display-wrapper container">
+        
+        <!-- Left Column: Expertise Info & Tags -->
+        <div class="skills__left-column">
+          <h2 class="skills__headline">Where’m I <span class="skills__headline-highlight">Expert?</span></h2>
+          
+          <p class="skills__description">
+            Specializing in front-end development, I build clean, responsive animations and user-friendly interfaces.
+            I'm also expanding my expertise in backend technologies to become a full-stack developer.
+          </p>
+
+          <div class="skills__tags-grid">
+            <!-- Front-end -->
+            <span class="skill-tag" data-skill="HTML5" data-level="90">
+                <img src="../img/html-logo.png" alt="HTML5" class="skill-tag-icon"> HTML5
+            </span>
+            <span class="skill-tag" data-skill="CSS3" data-level="85">
+                <img src="../img/css-logo.png" alt="CSS3" class="skill-tag-icon"> CSS3
+            </span>
+            <span class="skill-tag" data-skill="JavaScript" data-level="75">
+                <img src="../img/js-logo.png" alt="JS" class="skill-tag-icon"> JavaScript
+            </span>
+            <span class="skill-tag" data-skill="React.js" data-level="70">
+                <img src="../img/react-logo.png" alt="React" class="skill-tag-icon"> React.js
+            </span>
+            
+            <!-- Back-end / Tools -->
+            <span class="skill-tag" data-skill="Node.js" data-level="40">
+                <img src="../img/nodejs-logo.png" alt="Node" class="skill-tag-icon"> Node.js
+            </span>
+            <span class="skill-tag" data-skill="Express.js" data-level="40">
+                <img src="../img/express-logo.png" alt="Express" class="skill-tag-icon"> Express.js
+            </span>
+            <span class="skill-tag" data-skill="MongoDB" data-level="50">
+                <img src="../img/mongodb-logo.png" alt="Mongo" class="skill-tag-icon"> MongoDB
+            </span>
+            <span class="skill-tag" data-skill="Git" data-level="65">
+                <img src="../img/git-logo.png" alt="Git" class="skill-tag-icon"> Git
+            </span>
+            <span class="skill-tag" data-skill="GitHub" data-level="65">
+                <img src="../img/github-logo.png" alt="GitHub" class="skill-tag-icon"> GitHub
+            </span>
+            <span class="skill-tag" data-skill="Figma" data-level="85">
+                <img src="../img/figma-logo.png" alt="Figma" class="skill-tag-icon"> Figma
+            </span>
+            <span class="skill-tag" data-skill="VS Code" data-level="85">
+                <img src="../img/vscode-logo.png" alt="VSCode" class="skill-tag-icon"> VS Code
+            </span>
+          </div>
+
+
+        </div>
+
+        <!-- Right Column: Gauge UI -->
+        <div class="skills__right-column">
+          <div class="gauge-container">
+            <div class="gauge">
+               <!-- SVG Gauge -->
+               <svg class="gauge-svg" viewBox="0 0 200 100">
+                  <!-- Background Arc -->
+                  <path class="gauge-bg-arc" d="M20 90 A 80 80 0 0 1 180 90" fill="none" stroke="#2a2a35" stroke-width="15" stroke-linecap="round"/>
+                  <!-- Progress Arc (Dynamic) -->
+                  <path class="gauge-progress-arc" id="gauge-arc" d="M20 90 A 80 80 0 0 1 180 90" fill="none" stroke="#ff416c" stroke-width="15" stroke-linecap="round"/>
+                  <!-- Ticks (Simplified) -->
+                  <text x="15" y="95" class="gauge-tick">0</text>
+                  <text x="175" y="95" class="gauge-tick">100</text>
+               </svg>
+               <!-- Center Text -->
+               <div class="gauge-overlay">
+                  <h3 class="gauge-skill-name" id="gauge-text">Select Skill</h3>
+                  <span class="gauge-percentage" id="gauge-percent">0%</span>
+               </div>
+            </div>
+            <button class="gauge-btn">Click the Skill Tag</button>
+
+            <div class="skills__arrow-indicator">
+              <span class="skills__click-hint">Click tags to see proficiency</span>
+              <!-- Arrow pointing Left towards tags -->
+              <svg width="60" height="40" viewBox="0 0 100 50" fill="none" class="arrow-svg">
+                 <!-- Curve from Right (90) to Left (10) -->
+                 <path d="M90 25 Q 50 5 10 25" stroke="var(--text-color-light)" stroke-width="2" fill="none" />
+                 <!-- Arrow head at left (10, 25) -->
+                 <path d="M10 25 L 20 15 M 10 25 L 20 35" stroke="var(--text-color-light)" stroke-width="2" />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+      <div class="footer__container container">
+          <p class="footer__text">
+            Designed & Built with <span class="footer__heart">❤️</span> by Tsujin
+          </p>
+          <span class="footer__copy">
+            &#169; 2025 Tsujin. All rights reserved.
+          </span>
+      </div>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <!-- Main Script -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

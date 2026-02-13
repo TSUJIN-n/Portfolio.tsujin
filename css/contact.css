@@ -1,0 +1,117 @@
+/* CONTACT SECTION STYLES - Redesigned */
+
+/* Container & Layout */
+.contact__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+/* Heading */
+.contact__heading {
+    font-size: var(--h1-font-size);
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color: var(--title-color);
+}
+
+/* Paragraph */
+.contact__description {
+    max-width: 600px;
+    margin-bottom: 2.5rem;
+    color: var(--title-color); /* White text as requested */
+    font-size: var(--normal-font-size);
+    line-height: 1.6;
+}
+
+.highlight {
+    color: var(--first-color);
+    font-weight: 500;
+}
+
+/* Button */
+.contact__cta-button {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid var(--first-color);
+    color: var(--first-color);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.3s;
+    margin-bottom: 1.5rem;
+}
+
+.contact__cta-button:hover {
+    background-color: rgba(97, 218, 251, 0.1); /* Subtle hover background using first-color hue approx */
+    transform: translateY(-3px);
+}
+
+/* Invitation Text */
+.contact__invite {
+    color: var(--text-color);
+    margin-bottom: 1.5rem;
+    font-size: var(--small-font-size);
+}
+
+/* Social Icons */
+.contact__socials {
+    display: flex;
+    justify-content: center;
+    column-gap: 2rem; /* Adequate spacing */
+    margin-bottom: 3rem;
+}
+
+.contact__social-link {
+    font-size: 1.5rem;
+    color: var(--first-color);
+    transition: 0.3s;
+}
+
+.contact__social-link:hover {
+    color: var(--title-color);
+    transform: translateY(-3px);
+}
+
+/* Divider */
+.contact__divider {
+    width: 60%;
+    height: 1px;
+    background-color: var(--text-color-light);
+    opacity: 0.2;
+    margin: 0 auto 2rem;
+    display: block;
+}
+
+/* Footer Customization */
+.contact__footer {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    background-color: transparent; /* Seamless integration */
+}
+
+.footer__text {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.footer__heart {
+    color: #ff0000;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 576px) {
+    .contact__heading {
+        font-size: var(--h2-font-size);
+    }
+    
+    .contact__description {
+        padding: 0 1rem;
+        font-size: var(--small-font-size);
+    }
+}

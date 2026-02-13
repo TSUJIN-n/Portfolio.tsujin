@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsujin</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/projects.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">TSUJIN.</a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link">About</a></li>
+          <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link active-link">Projects</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="contact.html" class="button button--ghost button--small">Hire Me</a>
+          </li>
+        </ul>
+        
+        <!-- Close button (mobile) -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      
+      <div class="nav__btns">
+        <a href="contact.html" class="button button--ghost button--small nav__mobile-btn">Hire Me</a>
+        
+        <!-- Toggle button (mobile) -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- Projects Section -->
+    <section class="work section" id="projects">
+      <div class="projects__header-container">
+        <h2 class="section__title projects__title">Recent <span class="projects__title-gradient">Projects</span></h2>
+      </div>
+
+      <div class="work__container container grid fade-in">
+         <!-- Project 1 -->
+        <div class="work__card">
+          <div class="work__img-wrapper">
+             <div class="work__img-placeholder"></div> 
+          </div>
+          <div class="work__content">
+            <h3 class="work__title">Project Title</h3>
+            <p class="work__description">A short project description in muted gray text.</p>
+            <div class="work__tech-stack">
+              <i class="ri-reactjs-line work__tech-icon" title="React"></i>
+              <i class="ri-html5-fill work__tech-icon" title="HTML5"></i>
+              <i class="ri-css3-fill work__tech-icon" title="CSS3"></i>
+              <i class="ri-javascript-fill work__tech-icon" title="JavaScript"></i>
+            </div>
+            <a href="#" class="work__button">
+              Live <i class="ri-arrow-right-up-line work__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="work__card">
+          <div class="work__img-wrapper">
+             <div class="work__img-placeholder" style="background: linear-gradient(45deg, #2a0845, #6441a5);"></div>
+          </div>
+          <div class="work__content">
+            <h3 class="work__title">Project Title</h3>
+            <p class="work__description">A short project description in muted gray text.</p>
+            <div class="work__tech-stack">
+              <i class="ri-vuejs-line work__tech-icon" title="Vue"></i>
+              <i class="ri-node-tree work__tech-icon" title="Node"></i>
+            </div>
+            <a href="#" class="work__button">
+              Live <i class="ri-arrow-right-up-line work__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="work__card">
+          <div class="work__img-wrapper">
+             <div class="work__img-placeholder" style="background: linear-gradient(45deg, #134e5e, #71b280);"></div>
+          </div>
+          <div class="work__content">
+            <h3 class="work__title">Project Title</h3>
+            <p class="work__description">A short project description in muted gray text.</p>
+            <div class="work__tech-stack">
+              <i class="ri-javascript-fill work__tech-icon" title="JavaScript"></i>
+              <i class="ri-database-2-line work__tech-icon" title="SQL"></i>
+            </div>
+            <a href="#" class="work__button">
+              Live <i class="ri-arrow-right-up-line work__icon"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="work__card">
+          <div class="work__img-wrapper">
+             <div class="work__img-placeholder" style="background: linear-gradient(45deg, #ff416c, #ff4b2b);"></div>
+          </div>
+          <div class="work__content">
+            <h3 class="work__title">Project Title</h3>
+            <p class="work__description">A short project description in muted gray text.</p>
+            <div class="work__tech-stack">
+              <i class="ri-reactjs-fill work__tech-icon" title="React"></i>
+              <i class="ri-fire-fill work__tech-icon" title="Firebase"></i>
+            </div>
+            <a href="#" class="work__button">
+              Live <i class="ri-arrow-right-up-line work__icon"></i>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+      <div class="footer__container container">
+          <p class="footer__text">
+            Designed & Built with <span class="footer__heart">❤️</span> by Tsujin
+          </p>
+          <span class="footer__copy">
+            &#169; 2025 Tsujin. All rights reserved.
+          </span>
+      </div>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <!-- Main Script -->
+  <script src="../js/script.js"></script>
+</body>
+</html>

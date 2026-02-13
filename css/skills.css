@@ -1,0 +1,199 @@
+/* SKILLS SECTION STYLES - Redesigned (Gauge & Tags) */
+
+/* Layout Wrapper */
+.skills__display-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+/* Left Column */
+.skills__left-column {
+    animation: fadeInUp 0.8s ease;
+}
+
+.skills__headline {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.skills__headline-highlight {
+    color: var(--first-color);
+}
+
+.skills__description {
+    font-size: var(--normal-font-size);
+    color: var(--text-color-light);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 500px;
+}
+
+/* Skill Tags Grid */
+.skills__tags-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.skill-tag {
+    display: flex; /* Flex to align icon and text */
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid rgba(77, 182, 172, 0.5); /* Thin cyan border */
+    border-radius: 0.5rem;
+    color: var(--title-color);
+    font-family: monospace, sans-serif;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: 0.3s;
+    background-color: transparent;
+}
+
+.skill-tag-icon {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.skill-tag:hover, .skill-tag.active-skill {
+    background-color: rgba(77, 182, 172, 0.1);
+    border-color: #4db6ac;
+    box-shadow: 0 0 10px rgba(77, 182, 172, 0.2);
+    transform: translateY(-2px);
+}
+
+.skills__arrow-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    opacity: 0.7;
+}
+
+/* Mobile: Point Up (Tags are above) */
+@media screen and (max-width: 991px) {
+    .skills__arrow-indicator .arrow-svg {
+        transform: rotate(90deg); /* Points Up (original is Left) */
+    }
+    .skills__arrow-indicator {
+        flex-direction: column-reverse; /* Text below arrow */
+    }
+}
+
+.skills__click-hint {
+    font-size: 0.8rem;
+    color: var(--text-color-light);
+    font-style: italic;
+}
+
+/* Right Column: Gauge */
+.skills__right-column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gauge-container {
+    animation: fadeInUp 0.8s ease backwards 0.3s;
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.gauge {
+    position: relative;
+    width: 200px;
+    height: 120px; /* Half circle height approx + text space */
+    margin: 0 auto 1.5rem;
+}
+
+.gauge-svg {
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+.gauge-bg-arc {
+  stroke: #2a2a35; /* Dark gray inactive */
+}
+
+.gauge-progress-arc {
+  stroke: #ff416c; /* Red active */
+  stroke-dasharray: 450; /* Approx length of arc */
+  stroke-dashoffset: 450; /* Start empty */
+  transition: stroke-dashoffset 1s ease-out;
+}
+
+.gauge-tick {
+    font-size: 0.8rem;
+    fill: var(--text-color-light);
+    font-family: monospace;
+}
+
+.gauge-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.gauge-skill-name {
+    display: block;
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 0.25rem;
+}
+
+.gauge-percentage {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #ff416c;
+}
+
+.gauge-btn {
+    padding: 0.75rem 1.5rem;
+    background: transparent;
+    border: 1px solid var(--text-color-light);
+    color: var(--text-color);
+    border-radius: 2rem;
+    font-size: 0.9rem;
+    pointer-events: none; /* Just visual layout as requested, or can be interactive */
+}
+
+/* Keyframes */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* BREAKPOINTS */
+@media screen and (min-width: 992px) {
+    .skills__display-wrapper {
+        grid-template-columns: 1fr 1fr;
+        gap: 5rem;
+    }
+    
+    .skills__headline {
+        font-size: 3rem;
+    }
+}

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tsujin</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/home.css">
+  <link rel="stylesheet" href="../css/about.css">
+</head>
+<body>
+  
+  <!-- Header -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="../index.html" class="nav__logo">TSUJIN.</a>
+      
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="../index.html" class="nav__link">Home</a></li>
+          <li class="nav__item"><a href="about.html" class="nav__link active-link">About</a></li>
+          <li class="nav__item"><a href="skills.html" class="nav__link">Skills</a></li>
+          <li class="nav__item"><a href="projects.html" class="nav__link">Projects</a></li>
+          <li class="nav__item"><a href="contact.html" class="nav__link">Contact</a></li>
+          <li class="nav__item">
+            <a href="contact.html" class="button button--ghost button--small">Hire Me</a>
+          </li>
+        </ul>
+        
+        <!-- Close button (mobile) -->
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-line"></i>
+        </div>
+      </div>
+      
+      <div class="nav__btns">
+        <a href="contact.html" class="button button--ghost button--small nav__mobile-btn">Hire Me</a>
+        
+        <!-- Toggle button (mobile) -->
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="ri-menu-4-line"></i>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    <!-- About Section -->
+    <section class="about section" id="about">
+      <h2 class="section__title">About Me</h2>
+      <span class="section__subtitle">My Introduction</span>
+
+      <div class="about__container container grid fade-in">
+        <div class="about__data">
+          <p class="about__description">
+             Digital artisan with a focus on web development. I combine technical skills with design principles to create interfaces that users love. 
+             My journey involves constant learning and adapting to the latest web technologies.
+          </p>
+          <div class="about__info">
+            <div class="about__box">
+              <i class="ri-award-line about__icon"></i>
+              <h3 class="about__title">Experience</h3>
+              <span class="about__subtitle">2+ Years</span>
+            </div>
+            <div class="about__box">
+              <i class="ri-briefcase-line about__icon"></i>
+              <h3 class="about__title">Completed</h3>
+              <span class="about__subtitle">15+ Projects</span>
+            </div>
+            <div class="about__box">
+              <i class="ri-customer-service-line about__icon"></i>
+              <h3 class="about__title">Support</h3>
+              <span class="about__subtitle">Online 24/7</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+      <div class="footer__container container">
+          <p class="footer__text">
+            Designed & Built with <span class="footer__heart">❤️</span> by Tsujin
+          </p>
+          <span class="footer__copy">
+            &#169; 2025 Tsujin. All rights reserved.
+          </span>
+      </div>
+  </footer>
+
+  <!-- Scroll Up -->
+  <a href="#" class="scrollup" id="scroll-up">
+    <i class="ri-arrow-up-line scrollup__icon"></i>
+  </a>
+
+  <!-- Main Script -->
+  <script src="../js/script.js"></script>
+</body>
+</html>
