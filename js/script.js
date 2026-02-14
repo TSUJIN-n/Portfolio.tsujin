@@ -178,7 +178,7 @@ function initHireMeHover() {
     if (!homeImage) return; // Only run on pages with home image
     
     const originalImage = homeImage.src;
-    const smileImage = '../img/smileFace.png';
+    const smileImage = 'img/smileFace.png';
     
     // Helper function to smoothly change image
     const changeImageSmooth = (newSrc) => {
@@ -209,3 +209,4 @@ document.addEventListener("DOMContentLoaded", () => {
     initSkillGauge(); 
     initHireMeHover();
 });
+
